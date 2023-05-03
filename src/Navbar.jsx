@@ -7,7 +7,6 @@ function Navbar() {
   return (
     <nav className="navbar is-dark">
       <div className="navbar-brand">
-        <NavLink to="/">Blogs</NavLink>
         <button className="button navbar-burger">
           <span></span>
           <span></span>
@@ -16,12 +15,14 @@ function Navbar() {
       </div>
       <div className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item" href="#">
-            Home
-          </a>
-          <a className="navbar-item" href="#">
-            About
-          </a>
+          <NavLink to="/" className="navbar-item ">
+            Blogs
+          </NavLink>
+
+          <NavLink to="/todolist" className="navbar-item">
+            Todolist
+          </NavLink>
+
           <a className="navbar-item" href="#">
             Contact
           </a>
