@@ -49,6 +49,7 @@ const Todolist = () => {
       </form>
 
       <ul className="list has-text-white">
+        {todos.length === 0 && "No tasks yet"}
         {todos.map((todo) => {
           return (
             <li key={todo.id}>
