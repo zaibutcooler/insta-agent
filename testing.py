@@ -9,7 +9,6 @@ load_dotenv()
 config = dotenv_values(".env")
 
 if __name__ == "__main__":
-    print(config['STUPID'])
     username,password = config['USERNAME'],config['PASSWORD']
 
     workflow = Workflow(username,password)
